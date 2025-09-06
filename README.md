@@ -1,18 +1,17 @@
-# Blender Material Serializer/Deserializer
+# Blender Material Copy Paster
 
-A Blender addon that allows you to serialize node-based materials into JSON format and deserialize them back into new materials. Includes a convenient toolbar in the Shader Editor for easy copy/paste functionality.
+A Blender addon that allows you to copy and paste node-based materials to/from JSON format. Includes a convenient toolbar in the Shader Editor for easy material sharing.
 
 ## Features
 
-- ✅ **Shader Editor Toolbar**: Copy/paste buttons in the Shader Editor sidebar
-- ✅ Serialize complete node trees including nodes, properties, and links
-- ✅ Handle basic node properties (location, input defaults, colors, vectors)
-- ✅ Export materials to JSON for copy-pasting
-- ✅ Import materials from JSON strings
-- ✅ Clipboard integration for seamless material sharing
-- ✅ Error handling for invalid JSON and missing materials
-- ✅ Compatible with Blender 4.2+
-- ✅ Clean, commented code
+- Shader Editor Toolbar: Copy/paste buttons in the Shader Editor sidebar
+- Serialize complete node trees including nodes, properties, and links
+- Handle basic node properties (location, input defaults, colors, vectors)
+- Export materials to JSON for copy-pasting
+- Import materials from JSON strings
+- Clipboard integration for seamless material sharing
+- Error handling for invalid JSON and missing materials
+- Clean, commented code
 
 ## Installation
 
@@ -29,7 +28,7 @@ A Blender addon that allows you to serialize node-based materials into JSON form
    ```
 3. In Blender, go to `Edit > Preferences > Add-ons`
 4. Click `Install...` and select the `__init__.py` file from this repository
-5. Enable the addon by checking the box next to "Material Serializer"
+5. Enable the addon by checking the box next to "Material Copy Paster"
 
 ### Option 2: Manual Installation
 
@@ -49,7 +48,7 @@ A Blender addon that allows you to serialize node-based materials into JSON form
 
 1. Open the Shader Editor
 2. Select an object with a node-based material
-3. Look for the "Material Serializer" panel in the right sidebar (Tool tab)
+3. Look for the "Material Copy Paster" panel in the right sidebar (Tool tab)
 4. Click "Copy Material to Clipboard" to export
 5. Click "Paste Material from Clipboard" to import
 
@@ -148,7 +147,7 @@ If pyperclip is not installed, the toolbar will show a warning but the basic JSO
 
 ## Compatibility
 
-- Blender 4.2+
+- Tested on Blender 4.5.2
 - Python 3.7+
 
 ## License
