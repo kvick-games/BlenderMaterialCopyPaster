@@ -11,7 +11,7 @@ import datetime
 def create_addon_zip():
     """Create zip file from the addon folder"""
 
-    addon_folder = "material_serializer"
+    addon_folder = "MaterialCopyPaster"
     zip_filename = f"{addon_folder}.zip"
 
     # Check if addon folder exists
@@ -66,7 +66,7 @@ def create_release_zip():
 
     # Files to include in release
     include_patterns = [
-        "material_serializer/**/*",
+        "MaterialCopyPaster/**/*",
         "README.md",
         "requirements.txt",
         "install_dependencies.py",
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     if addon_success and release_success:
         print("\n🎊 All zips created successfully!")
         print("\nUsage:")
-        print("- material_serializer.zip → Install in Blender")
+        print("- MaterialCopyPaster.zip → Install in Blender")
         print("- BlenderMaterialCopyPaster.zip → Upload to GitHub releases")
     else:
         print("\n❌ Some zips failed to create")
